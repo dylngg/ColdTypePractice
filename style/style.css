@@ -15,7 +15,7 @@ h1 {
 
 input {
 /*  width: 345px;*/
-  width: 1em;
+  width: 1rem;
   border: none;
   font-weight: 400;
   text-align: left;
@@ -42,9 +42,7 @@ span {
   width: 255px;
   overflow-x: hidden;
 }
-span:after {
-  background-color: red;
-}
+
 
 .coldInputContainer {
   margin-left: -255px;

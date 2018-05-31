@@ -2,18 +2,74 @@
 <html lang="en">
 
 <head>
+  <!-- metadata for the robots -->
   <meta charset="UTF-8">
   <title>Cold Type Practice</title>
   <meta name="description" content="A cold hard web program to practice typing.">
   <meta name="author" content="Dylan Gardner">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- style -->
+  
+  <!-- icons for the eagle eyed -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- style for everyone-->
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+  <container class="menu-container">
+    <input type="checkbox" id="openmenu">
+    <label class="settings-container settings" for="openmenu">
+     <span class="coldIconTitle">Settings.</span>
+    </label>
+    <div class="menu">
+      <h2>Practice Type</h2>
+      <hr>
+      <ul>
+        <li class="coldRadioList">
+          <input type="radio" name="practiceradio" id="keyboardCharacters" class="coldRadioButton">
+          <label for="keyboardCharacters" class="coldRadioDescription">Keybord Characters</label>
+        </li>
+        <li class="coldRadioList">
+          <input type="radio" name="practiceradio" id="alphabet" class="coldRadioButton">
+          <label for="alphabet" class="coldRadioDescription">The Alphabet</label>
+        </li>
+        <li class="coldRadioList">
+          <input type="radio" name="practiceradio" id="commonWords" class="coldRadioButton">
+          <label for="commonWords" class="coldRadioDescription">Common Words</label>
+        </li>
+        <li class="coldRadioList">
+          <input type="radio" name="practiceradio" id="uncommonWords" class="coldRadioButton">
+          <label for="uncommonWords" class="coldRadioDescription">Uncommon Words</label>
+        </li>
+      </ul>
+      <h2>Capitalization Settings</h2>
+      <hr>
+      <ul>
+        <li class="coldRadioList">
+          <input type="radio" name="capitalradio" id="keyboardCharacters" class="coldRadioButton">
+          <label for="random" class="coldRadioDescription">Random Capitalization</label>
+        </li>
+        <li class="coldRadioList">
+          <input type="radio" name="capitalradio" id="alphabet" class="coldRadioButton">
+          <label for="capitalize" class="coldRadioDescription">Capitalize First Letter</label>
+        </li>
+        <li class="coldRadioList">
+          <input type="radio" name="capitalradio" id="commonWords" class="coldRadioButton">
+          <label for="lowercase" class="coldRadioDescription">use only lower case</label>
+        </li>
+      </ul>
+    </div>
+  </container>
   <h1>
     <div class="coldInputContainer">
       <input id="coldInput" type="text" inputmode="text" value="" maxlength="1" autofocus>
@@ -27,3 +83,5 @@
   <script src="js/textGenerator.js"></script>
 
 </body>
+
+</html>

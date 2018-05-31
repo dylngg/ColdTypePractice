@@ -11,12 +11,115 @@ h1 {
   pointer-events: none;
   width: 100%;
   display: block;
+  position: absolute;
 }
 
-input {
-/*  width: 345px;*/
+.coldInputContainer {
+  margin-left: -255px;
+}
+
+p {
+  bottom: 0;
+  margin-bottom: 50px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  opacity: .6;
+  font-weight: 300;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.menu-container {
+  position: absolute;
+}
+
+
+
+.settings-container {
+  margin: 35px;
+  line-height: 25px;
+  font-size: 16px;
+  display: block;
+  font-weight: 300;
+  position: absolute;
+  width: 120px;
+  z-index: 10;
+}
+#openmenu:checked ~ .settings > span{
+  opacity: 0;
+}
+#openmenu:checked ~ .settings{
+  background-image: url(../icons/x.svg);
+}
+#openmenu:checked ~ .menu {
+  display: block;
+}
+#openmenu:checked ~ .close {
+  display: block;
+}
+.settings-container:hover {
+/*  text-decoration: underline;*/
+  cursor: pointer;
+  opacity: .6;
+}
+
+.menu {
+  display: none;
+  width: 400px;
+  height: 100%;
+  background-color: #F2F2F2;
+  position: fixed;
+  margin: 0;
+  z-index: 0;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  padding: 35px;
+  z-index: 5;
+/*  box-shadow:0 0 20px 0 rgba(0,0,0,.2);*/
+}
+
+#coldOutput {
+  z-index: 1;
+  background-color: white;
+  position: absolute;
+  text-align: left;
+  white-space:nowrap;
+  max-width: 340px;
+  width: 255px;
+  overflow-x: hidden;
+}
+
+.coldIconTitle {
+  padding-top: 0px;
+  font-size: 18px;
+  padding-left: 37px;
+  position: relative;
+  display: inline-block;
+}
+
+h2 {
+  margin-top: 40px;
+  font-weight: 400;
+  margin-bottom: 15px;  
+  font-size: 22px;
+}
+h2:first-child {
+  margin-top: 60px;
+}
+
+hr {
+  border: solid .5px black;
+  opacity: .6;
+  width: 315px;
+  margin-left: 0;
+}
+
+#coldInput {
   width: 1rem;
   border: none;
+  border-radius: 0;
   font-weight: 400;
   text-align: left;
   font-size: inherit;
@@ -32,28 +135,57 @@ input {
   border-bottom: solid 2px black;
 }
 
-span {
-  z-index: 1;
-  background-color: white;
-  position: absolute;
-  text-align: left;
-  white-space:nowrap;
-  max-width: 340px;
-  width: 255px;
-  overflow-x: hidden;
+.coldRadioButton {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor:pointer;
+  background-image: url(icons/circle.svg);
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
+  font-size: 18px;
 }
 
-
-.coldInputContainer {
-  margin-left: -255px;
-}
-
-p {
-  bottom: 0;
-  margin-bottom: 50px;
-  position: absolute;
-  text-align: center;
-  width: 100%;
+.coldRadioDescription {
+  vertical-align: middle;
+  font-size: 16px;
+  margin-top: 1;
   opacity: .6;
-  font-weight: 300;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.coldRadioList {
+  padding-bottom: 10px;
+}
+
+.close {
+  z-index: 5;
+  display: none;
+}
+
+#openmenu {
+  position: absolute;
+  margin: 35px;
+  pointer-events: all;
+  display: none;
+}
+
+.settings {
+  height: 25px;
+  margin-bottom: -5px;
+  display: inline-block;
+  background-image: url(../icons/settings.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

@@ -1,5 +1,5 @@
 ![Cold Type Practice](coldTypeLogoLong.svg "Cold Type Practice")
-> A cold hard web program for practicing typing.
+> A cold hard web program for typing practice. <https://dylngg.github.io/cold-type-practice/>
 
 The website features a random stream of characters on a English keyboard that you have to type in order for more characters to appear.
 

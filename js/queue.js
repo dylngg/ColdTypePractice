@@ -17,12 +17,12 @@ function Queue(){
     return (queue.length == 0);
   }
 
-  /* Enqueues the specified item. The parameter is:
+  /* Enqueues the specified items. The parameter is:
    *
-   * item - the item to enqueue
+   * items - the items to enqueue
    */
-  this.enqueue = function(item){
-    queue.push(item);
+  this.enqueue = function(items){
+    queue = queue.concat(items);
   }
 
   /* Dequeues an item and returns it. If the queue is empty, the value

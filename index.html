@@ -36,35 +36,35 @@
       <hr>
       <ul>
         <li class="coldRadioList">
-          <input type="radio" name="practiceradio" id="keyboardCharacters" class="coldRadioButton">
+          <input type="radio" name="practiceradio" id="keyboardCharacters" checked="checked" class="coldRadioButton" onclick="changeType(this);" value="keyboardCharacters">
           <label for="keyboardCharacters" class="coldRadioDescription">Keybord Characters</label>
         </li>
         <li class="coldRadioList">
-          <input type="radio" name="practiceradio" id="alphabet" class="coldRadioButton">
+          <input type="radio" name="practiceradio" id="alphabet" class="coldRadioButton" onclick="changeType(this);" value="alphabet">
           <label for="alphabet" class="coldRadioDescription">The Alphabet</label>
         </li>
         <li class="coldRadioList">
-          <input type="radio" name="practiceradio" id="commonWords" class="coldRadioButton">
-          <label for="commonWords" class="coldRadioDescription">Common Words</label>
+          <input type="radio" name="practiceradio" id="word" class="coldRadioButton" onclick="changeType(this);" value="word">
+          <label for="word" class="coldRadioDescription">Words</label>
         </li>
         <li class="coldRadioList">
-          <input type="radio" name="practiceradio" id="uncommonWords" class="coldRadioButton">
-          <label for="uncommonWords" class="coldRadioDescription">Uncommon Words</label>
+          <input type="radio" name="practiceradio" id="longWord" class="coldRadioButton" onclick="changeType(this);" value="longWord">
+          <label for="longWord" class="coldRadioDescription">Long Words</label>
         </li>
       </ul>
       <h2>Capitalization Settings</h2>
       <hr>
       <ul>
         <li class="coldRadioList">
-          <input type="radio" name="capitalradio" id="keyboardCharacters" class="coldRadioButton">
+          <input type="radio" name="capitalradio" id="random" checked="checked" class="coldRadioButton" onclick="changeCapitalization(this);" value="random">
           <label for="random" class="coldRadioDescription">Random Capitalization</label>
         </li>
         <li class="coldRadioList">
-          <input type="radio" name="capitalradio" id="alphabet" class="coldRadioButton">
-          <label for="capitalize" class="coldRadioDescription">Capitalize First Letter</label>
+          <input type="radio" name="capitalradio" id="title" class="coldRadioButton" onclick="changeCapitalization(this);" value="title">
+          <label for="title" class="coldRadioDescription">Capitalize First Letter</label>
         </li>
         <li class="coldRadioList">
-          <input type="radio" name="capitalradio" id="commonWords" class="coldRadioButton">
+          <input type="radio" name="capitalradio" id="lowercase" class="coldRadioButton" onclick="changeCapitalization(this);" value="lowercase">
           <label for="lowercase" class="coldRadioDescription">use only lower case</label>
         </li>
       </ul>
@@ -81,6 +81,7 @@
   <!-- scripts -->
   <script src="js/queue.js"></script>
   <script src="js/textGenerator.js"></script>
+  <script src="js/words.min.js"></script>
 
 </body>
 

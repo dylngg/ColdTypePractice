@@ -115,7 +115,6 @@ function getRandomWord(uncommon) {
  * Default: randomly changes characters to uppercase
  */
 String.prototype.capitalize = function (capitalizationType) {
-  console.log(this, capitalizationType);
   // if title
   if (capitalizationType == 'title') return (this.charAt(0).toUpperCase() + this.substring(1));
   // if lowercase
@@ -129,7 +128,6 @@ String.prototype.capitalize = function (capitalizationType) {
     }
     
     var endResult = stringBuilder.join('');
-    console.log(endResult);
-    return endResult;;
+    return endResult;
   }
 };

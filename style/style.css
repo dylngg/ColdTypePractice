@@ -59,13 +59,31 @@ p {
   }
 }
 #openmenu:checked ~ .settings > span{
-  display: none;
+  animation: fadeaway .3s forwards;
+}
+@keyframes fadeaway {
+  0% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 #openmenu:checked ~ .settings{
   background-image: url(../icons/x.svg);
 }
 #openmenu:checked ~ .menu {
   display: block;
+  animation: slidein .5s forwards;
+}
+@keyframes slidein {
+  0% {
+    left: -400px; 
+  }
+  100% {
+    left: 0;
+  }
 }
 #openmenu:checked ~ .close {
   display: block;
@@ -79,6 +97,7 @@ p {
 .menu {
   display: none;
   width: 400px;
+  left: -400px;
   height: 100%;
   background-color: #F2F2F2;
   position: fixed;

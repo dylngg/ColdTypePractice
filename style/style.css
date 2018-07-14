@@ -141,7 +141,7 @@ h2 {
   margin-top: 40px;
   font-weight: 400;
   margin-bottom: 15px;  
-  font-size: 22px;
+  font-size: 18px;
 }
 h2:first-child {
   margin-top: 60px;
@@ -207,7 +207,7 @@ ul {
 }
 
 .coldRadioList {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .close {
@@ -235,4 +235,22 @@ ul {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.githubLink {
+  font-size: 18px;
+  padding-right: 37px;
+  position: relative;
+  display: inline-block;
+}
+
+.github-container {
+  margin: 35px;
+  line-height: 25px;
+  display: block;
+  font-weight: 300;
+  position: absolute;
+  float: right;
+  right: 0;
+  width: 60px;
 }

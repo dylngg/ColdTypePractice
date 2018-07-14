@@ -68,20 +68,31 @@
           <label for="lowercase" class="coldRadioDescription">use only lower case</label>
         </li>
       </ul>
+      <h2>Functionality</h2>
+      <hr>
+      <ul>
+        <li class="coldRadioList">
+          <input type="checkbox" name="functionradio" id="random" class="coldRadioButton" onclick="changeFunctionality(this);" value="random">
+          <label for="reset" class="coldRadioDescription">Reset on Incorrect Character</label>
+        </li>
+      </ul>
     </div>
   </container>
+  <label class="github-container">
+    <a href="https://github.com/dylngg/cold-type-practice" class="githubLink">Github</a>
+  </label>
   <h1>
     <div class="coldInputContainer">
       <input id="coldInput" type="text" inputmode="text" value="" maxlength="1" autofocus>
       <span id="coldOutput">Cold Type Practice</span>
     </div>
   </h1>
-  <p>Start typing the text in the input box to start.<br><b>Note:</b> This website is in progress, so some functionality may not work.</p>
+  <p>Start typing the text in the input box to start.<br><b>Note:</b> This website is in progress, so some functionality may be buggy.</p>
 
   <!-- scripts -->
   <script src="js/queue.js"></script>
-  <script src="js/textGenerator.js"></script>
   <script src="js/words.min.js"></script>
+  <script src="js/textGenerator.js"></script>
 
 </body>
 
